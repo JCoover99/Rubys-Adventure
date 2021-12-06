@@ -151,6 +151,7 @@ MonoBehaviour:
   vertical: 0
   changeTime: 2
   smokeEffect: {fileID: 3312770834786850106}
+  botFixed: {fileID: 8300000, guid: e7fa1971a86d60945bb64585c0ac14d5, type: 3}
 --- !u!95 &7689396487642624035
 Animator:
   serializedVersion: 3

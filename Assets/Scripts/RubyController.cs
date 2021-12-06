@@ -123,6 +123,11 @@ public class RubyController : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
+
     }
 
     void FixedUpdate()
@@ -133,10 +138,7 @@ public class RubyController : MonoBehaviour
 
         rigidbody2d.MovePosition(position);
 
-        if (Input.GetKeyDown("escape"))
-        {
-            Application.Quit();
-        }
+ 
     }
 
    

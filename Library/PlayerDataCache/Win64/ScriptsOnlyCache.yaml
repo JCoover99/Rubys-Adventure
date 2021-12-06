@@ -1,9 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AmmoCollectible
     - DamageZone
     - EnemyController
+    - HardEnemyController
     - HealthCollectible
+    - MegaAmmo
+    - MegaHealth
     - NonPlayerCharacter
     - Projectile
     - RubyController
@@ -16,11 +20,14 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineVirtualCamera
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -39,8 +46,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -53,8 +62,120 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/MainScene.unity:
+    Assets/Scenes/Level 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 650}
+    - Class: 114
+      Script: {instanceID: 1482}
+    - Class: 114
+      Script: {instanceID: 2172}
+    - Class: 114
+      Script: {instanceID: 2192}
+    - Class: 114
+      Script: {instanceID: 2286}
+    - Class: 114
+      Script: {instanceID: 2602}
+    - Class: 114
+      Script: {instanceID: 2676}
+    - Class: 114
+      Script: {instanceID: 2730}
+    - Class: 114
+      Script: {instanceID: 2748}
+    - Class: 114
+      Script: {instanceID: 2814}
+    - Class: 114
+      Script: {instanceID: 2910}
+    - Class: 114
+      Script: {instanceID: 2996}
+    - Class: 114
+      Script: {instanceID: 3138}
+    - Class: 114
+      Script: {instanceID: 3396}
+    - Class: 114
+      Script: {instanceID: 3558}
+    - Class: 114
+      Script: {instanceID: 3806}
+    - Class: 114
+      Script: {instanceID: 4066}
+    - Class: 114
+      Script: {instanceID: 4184}
+    - Class: 114
+      Script: {instanceID: 4410}
+    - Class: 114
+      Script: {instanceID: 4578}
+    - Class: 114
+      Script: {instanceID: 5040}
+    - Class: 114
+      Script: {instanceID: 54782}
+    - Class: 114
+      Script: {instanceID: 63866}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/MainScene 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -104,6 +225,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2278}
     - Class: 114
+      Script: {instanceID: 2286}
+    - Class: 114
       Script: {instanceID: 2300}
     - Class: 114
       Script: {instanceID: 2602}
@@ -134,11 +257,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4184}
     - Class: 114
-      Script: {instanceID: 4576}
+      Script: {instanceID: 4410}
     - Class: 114
-      Script: {instanceID: 4930}
+      Script: {instanceID: 4578}
     - Class: 114
-      Script: {instanceID: 5332}
+      Script: {instanceID: 4932}
+    - Class: 114
+      Script: {instanceID: 5040}
+    - Class: 114
+      Script: {instanceID: 5336}
+    - Class: 114
+      Script: {instanceID: 54782}
+    - Class: 114
+      Script: {instanceID: 63866}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -382,7 +513,7 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
-      Hash: 03f04f4d31121d49bf2dd5bb990e3023
+      Hash: 9b367c9fa5bab2a27d0b95179fb2c42e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RubyController
@@ -598,7 +729,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
-      Hash: 5542f3ae196faef513bb1cda3e74fb10
+      Hash: 6e9db2ca23ee9e420393aef7fb087b49
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
@@ -772,6 +903,12 @@ ScriptsOnlyBuild:
     className: CinemachineIndependentImpulseListener
   - hash:
       serializedVersion: 2
+      Hash: fdd3877fb506f413fed4b9d19b0d639e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AmmoCollectible
+  - hash:
+      serializedVersion: 2
       Hash: 0edeba255bdbade25edc357f1412ba38
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: UnityEngine.U2D
@@ -898,6 +1035,12 @@ ScriptsOnlyBuild:
     className: CinemachineHardLockToTarget
   - hash:
       serializedVersion: 2
+      Hash: 6e9db2ca23ee9e420393aef7fb087b49
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HardEnemyController
+  - hash:
+      serializedVersion: 2
       Hash: af56f77a30c1a2da1680c736a6f5c6e8
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1016,8 +1159,21 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: e8565efb283f358a6685935463171ae7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MegaHealth
+  - hash:
+      serializedVersion: 2
+      Hash: fdd3877fb506f413fed4b9d19b0d639e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MegaAmmo
   platform: 19
   scenePathNames:
-  - Assets/Scenes/MainScene.unity
+  - Assets/Scenes/MainScene 1.unity
+  - Assets/Scenes/Level 2.unity
   playerPath: C:/Users/sirjo/Documents/Ruby_Final/Rubys Adventure Final/Builds/Rubys
     Adventure Final.exe

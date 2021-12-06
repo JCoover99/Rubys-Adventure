@@ -17,6 +17,9 @@ public class HardEnemyController : MonoBehaviour
 
     Animator animator;
 
+    AudioSource audioSource;
+    public AudioClip botFixed;
+
     private RubyController rubyController;
 
     // Start is called before the first frame update
@@ -42,6 +45,7 @@ public class HardEnemyController : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -95,12 +99,18 @@ public class HardEnemyController : MonoBehaviour
         }
     }
 
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
+
     public void Fix()
     {
         broken = false;
         rigidbody2D.simulated = false;
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
+        PlaySound(botFixed);
 
         RubyController player = rubyController.GetComponent<RubyController>();
 
